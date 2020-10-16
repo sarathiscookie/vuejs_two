@@ -25,7 +25,10 @@
                   <h1>{{ product }}</h1>
                   <small>{{ description }}</small>
                   <a :href="url" >Click Here!</a>
-                  <h4><span v-if="onSale">On Sale!</span></h4>
+                  <h4>
+                      <span v-if="onSale">On Sale!</span>
+                      <span v-else="onSale">Out of stock!</span>
+                  </h4>
               </div>
             </div>
 
