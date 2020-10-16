@@ -6,6 +6,6 @@ let app = new Vue({
         url: 'https://fast.com',
         image: './images/vmSocks-green-onWhite.jpg',
         alt: 'Technology',
-        onSale: false
+        stocks: 0
     }
 })

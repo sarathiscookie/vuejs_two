@@ -26,8 +26,9 @@
                   <small>{{ description }}</small>
                   <a :href="url" >Click Here!</a>
                   <h4>
-                      <span v-if="onSale">On Sale!</span>
-                      <span v-else="onSale">Out of stock!</span>
+                      <span v-if="stocks > 10">Available</span>
+                      <span v-else-if="stocks <= 10 && stocks > 0">Limited Stocks</span>
+                      <span v-else="stocks">Not Available</span>
                   </h4>
               </div>
             </div>
